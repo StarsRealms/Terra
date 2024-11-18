@@ -16,7 +16,7 @@ includeImmediateChildren(file("common/implementation"), "implementation")
 
 includeImmediateChildren(file("common/addons"), "addon")
 
-includeImmediateChildren(file("platforms"), "platform")
+//includeImmediateChildren(file("platforms"), "platform")
 
 includeImmediateChildren(file("platforms/bukkit/nms"), "Bukkit NMS")
 
