@@ -38,7 +38,7 @@ public class Reflection {
     public static final BiomeProxy BIOME;
 
     static {
-        ReflectionRemapper reflectionRemapper = ReflectionRemapper.forReobfMappingsInPaperJar();
+        ReflectionRemapper reflectionRemapper = ReflectionRemapper.noop();
         ReflectionProxyFactory reflectionProxyFactory = ReflectionProxyFactory.create(reflectionRemapper,
             Reflection.class.getClassLoader());
 

@@ -1,13 +1,28 @@
 apply(plugin = "io.papermc.paperweight.userdev")
 
-dependencies {
-    api(project(":platforms:bukkit:common"))
-    paperDevBundle(Versions.Bukkit.paperDevBundle)
-    implementation("xyz.jpenilla", "reflection-remapper", Versions.Bukkit.reflectionRemapper)
+
+repositories {
+    mavenLocal()
+    maven {
+        name = "AliYun-Release"
+        url = uri("https://packages.aliyun.com/maven/repository/2421751-release-ZmwRAc/")
+        credentials {
+            username = project.findProperty("aliyun.package.user") as String? ?: System.getenv("ALY_USER")
+            password = project.findProperty("aliyun.package.password") as String? ?: System.getenv("ALY_PASSWORD")
+        }
+    }
+    maven {
+        name = "AliYun-Snapshot"
+        url = uri("https://packages.aliyun.com/maven/repository/2421751-snapshot-i7Aufp/")
+        credentials {
+            username = project.findProperty("aliyun.package.user") as String? ?: System.getenv("ALY_USER")
+            password = project.findProperty("aliyun.package.password") as String? ?: System.getenv("ALY_PASSWORD")
+        }
+    }
 }
 
-tasks {
-    assemble {
-        dependsOn("reobfJar")
-    }
+dependencies {
+    api(project(":platforms:bukkit:common"))
+    paperweightDevBundle("com.starsrealm.nylon", "1.21.3-R0.1-20241119.073931-3")
+    implementation("xyz.jpenilla", "reflection-remapper", Versions.Bukkit.reflectionRemapper)
 }
