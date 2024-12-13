@@ -23,6 +23,6 @@ repositories {
 
 dependencies {
     api(project(":platforms:bukkit:common"))
-    paperweightDevBundle("com.starsrealm.nylon", "1.21.3-R0.1-20241119.073931-3")
+    paperweightDevBundle("com.starsrealm.nylon", "1.21.4-R0.1-20241212.130150-1")
     implementation("xyz.jpenilla", "reflection-remapper", Versions.Bukkit.reflectionRemapper)
 }
