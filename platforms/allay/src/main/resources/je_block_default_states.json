@@ -1,5 +1,5 @@
 {
-    "acacia_button": {
+    "minecraft:acacia_button": {
         "face": "wall",
         "facing": "north",
         "powered": "false"
@@ -125,8 +125,8 @@
     },
     "minecraft:azure_bluet": {},
     "minecraft:bamboo": {
-        "age": "0",
-        "leaves": "none",
+        "age_1": "0",
+        "bamboo_leaves": "none",
         "stage": "0"
     },
     "minecraft:bamboo_block": {
@@ -228,10 +228,10 @@
         "honey_level": "0"
     },
     "minecraft:beetroots": {
-        "age": "0"
+        "age_3": "0"
     },
     "minecraft:bell": {
-        "attachment": "floor",
+        "bell_attachment": "floor",
         "facing": "north",
         "powered": "false"
     },
@@ -523,9 +523,11 @@
         "waterlogged": "true"
     },
     "minecraft:budding_amethyst": {},
+    "minecraft:bush": {},
     "minecraft:cactus": {
         "age": "0"
     },
+    "minecraft:cactus_flower": {},
     "minecraft:cake": {
         "bites": "0"
     },
@@ -652,21 +654,21 @@
         "axis": "y"
     },
     "minecraft:chest": {
+        "chest_type": "single",
         "facing": "north",
-        "type": "single",
         "waterlogged": "false"
     },
     "minecraft:chipped_anvil": {
         "facing": "north"
     },
     "minecraft:chiseled_bookshelf": {
-        "facing": "north",
         "chiseled_bookshelf_slot_0_occupied": "false",
         "chiseled_bookshelf_slot_1_occupied": "false",
         "chiseled_bookshelf_slot_2_occupied": "false",
         "chiseled_bookshelf_slot_3_occupied": "false",
         "chiseled_bookshelf_slot_4_occupied": "false",
-        "chiseled_bookshelf_slot_5_occupied": "false"
+        "chiseled_bookshelf_slot_5_occupied": "false",
+        "facing": "north"
     },
     "minecraft:chiseled_copper": {},
     "minecraft:chiseled_deepslate": {},
@@ -674,12 +676,13 @@
     "minecraft:chiseled_polished_blackstone": {},
     "minecraft:chiseled_quartz_block": {},
     "minecraft:chiseled_red_sandstone": {},
+    "minecraft:chiseled_resin_bricks": {},
     "minecraft:chiseled_sandstone": {},
     "minecraft:chiseled_stone_bricks": {},
     "minecraft:chiseled_tuff": {},
     "minecraft:chiseled_tuff_bricks": {},
     "minecraft:chorus_flower": {
-        "age": "0"
+        "age_5": "0"
     },
     "minecraft:chorus_plant": {
         "down": "false",
@@ -690,6 +693,7 @@
         "west": "false"
     },
     "minecraft:clay": {},
+    "minecraft:closed_eyeblossom": {},
     "minecraft:coal_block": {},
     "minecraft:coal_ore": {},
     "minecraft:coarse_dirt": {},
@@ -733,7 +737,7 @@
     },
     "minecraft:cobweb": {},
     "minecraft:cocoa": {
-        "age": "0",
+        "age_2": "0",
         "facing": "north"
     },
     "minecraft:command_block": {
@@ -786,6 +790,11 @@
         "triggered": "false"
     },
     "minecraft:crafting_table": {},
+    "minecraft:creaking_heart": {
+        "axis": "y",
+        "creaking_heart_state": "uprooted",
+        "natural": "false"
+    },
     "minecraft:creeper_head": {
         "powered": "false",
         "rotation": "0"
@@ -1274,6 +1283,7 @@
         "facing": "north",
         "waterlogged": "true"
     },
+    "minecraft:firefly_bush": {},
     "minecraft:fletching_table": {},
     "minecraft:flower_pot": {},
     "minecraft:flowering_azalea": {},
@@ -1284,7 +1294,7 @@
     },
     "minecraft:frogspawn": {},
     "minecraft:frosted_ice": {
-        "age": "0"
+        "age_3": "0"
     },
     "minecraft:furnace": {
         "facing": "north",
@@ -1587,6 +1597,10 @@
         "level": "0"
     },
     "minecraft:lava_cauldron": {},
+    "minecraft:leaf_litter": {
+        "facing": "north",
+        "segment_amount": "1"
+    },
     "minecraft:lectern": {
         "facing": "north",
         "has_book": "false",
@@ -1814,7 +1828,7 @@
         "powered": "false"
     },
     "minecraft:mangrove_propagule": {
-        "age": "0",
+        "age_4": "0",
         "hanging": "false",
         "stage": "0",
         "waterlogged": "false"
@@ -1904,7 +1918,7 @@
     "minecraft:mossy_stone_bricks": {},
     "minecraft:moving_piston": {
         "facing": "north",
-        "type": "normal"
+        "piston_type": "normal"
     },
     "minecraft:mud": {},
     "minecraft:mud_brick_slab": {
@@ -1973,14 +1987,14 @@
     "minecraft:nether_quartz_ore": {},
     "minecraft:nether_sprouts": {},
     "minecraft:nether_wart": {
-        "age": "0"
+        "age_3": "0"
     },
     "minecraft:nether_wart_block": {},
     "minecraft:netherite_block": {},
     "minecraft:netherrack": {},
     "minecraft:note_block": {
-        "noteblock_instrument": "harp",
         "note": "0",
+        "noteblock_instrument": "harp",
         "powered": "false"
     },
     "minecraft:oak_button": {
@@ -2068,6 +2082,7 @@
     "minecraft:ochre_froglight": {
         "axis": "y"
     },
+    "minecraft:open_eyeblossom": {},
     "minecraft:orange_banner": {
         "rotation": "0"
     },
@@ -2144,6 +2159,94 @@
     },
     "minecraft:packed_ice": {},
     "minecraft:packed_mud": {},
+    "minecraft:pale_hanging_moss": {
+        "tip": "true"
+    },
+    "minecraft:pale_moss_block": {},
+    "minecraft:pale_moss_carpet": {
+        "bottom": "true",
+        "east": "none",
+        "north": "none",
+        "south": "none",
+        "west": "none"
+    },
+    "minecraft:pale_oak_button": {
+        "face": "wall",
+        "facing": "north",
+        "powered": "false"
+    },
+    "minecraft:pale_oak_door": {
+        "facing": "north",
+        "half": "lower",
+        "hinge": "left",
+        "open": "false",
+        "powered": "false"
+    },
+    "minecraft:pale_oak_fence": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "waterlogged": "false",
+        "west": "false"
+    },
+    "minecraft:pale_oak_fence_gate": {
+        "facing": "north",
+        "in_wall": "false",
+        "open": "false",
+        "powered": "false"
+    },
+    "minecraft:pale_oak_hanging_sign": {
+        "attached": "false",
+        "rotation": "0",
+        "waterlogged": "false"
+    },
+    "minecraft:pale_oak_leaves": {
+        "distance": "7",
+        "persistent": "false",
+        "waterlogged": "false"
+    },
+    "minecraft:pale_oak_log": {
+        "axis": "y"
+    },
+    "minecraft:pale_oak_planks": {},
+    "minecraft:pale_oak_pressure_plate": {
+        "powered": "false"
+    },
+    "minecraft:pale_oak_sapling": {
+        "stage": "0"
+    },
+    "minecraft:pale_oak_sign": {
+        "rotation": "0",
+        "waterlogged": "false"
+    },
+    "minecraft:pale_oak_slab": {
+        "type": "bottom",
+        "waterlogged": "false"
+    },
+    "minecraft:pale_oak_stairs": {
+        "facing": "north",
+        "half": "bottom",
+        "shape": "straight",
+        "waterlogged": "false"
+    },
+    "minecraft:pale_oak_trapdoor": {
+        "facing": "north",
+        "half": "bottom",
+        "open": "false",
+        "powered": "false",
+        "waterlogged": "false"
+    },
+    "minecraft:pale_oak_wall_hanging_sign": {
+        "facing": "north",
+        "waterlogged": "false"
+    },
+    "minecraft:pale_oak_wall_sign": {
+        "facing": "north",
+        "waterlogged": "false"
+    },
+    "minecraft:pale_oak_wood": {
+        "axis": "y"
+    },
     "minecraft:pearlescent_froglight": {
         "axis": "y"
     },
@@ -2211,11 +2314,11 @@
     },
     "minecraft:piston_head": {
         "facing": "north",
-        "short": "false",
-        "type": "normal"
+        "piston_type": "normal",
+        "short": "false"
     },
     "minecraft:pitcher_crop": {
-        "age": "0",
+        "age_4": "0",
         "half": "lower"
     },
     "minecraft:pitcher_plant": {
@@ -2371,6 +2474,7 @@
     "minecraft:potted_brown_mushroom": {},
     "minecraft:potted_cactus": {},
     "minecraft:potted_cherry_sapling": {},
+    "minecraft:potted_closed_eyeblossom": {},
     "minecraft:potted_cornflower": {},
     "minecraft:potted_crimson_fungus": {},
     "minecraft:potted_crimson_roots": {},
@@ -2383,8 +2487,10 @@
     "minecraft:potted_lily_of_the_valley": {},
     "minecraft:potted_mangrove_propagule": {},
     "minecraft:potted_oak_sapling": {},
+    "minecraft:potted_open_eyeblossom": {},
     "minecraft:potted_orange_tulip": {},
     "minecraft:potted_oxeye_daisy": {},
+    "minecraft:potted_pale_oak_sapling": {},
     "minecraft:potted_pink_tulip": {},
     "minecraft:potted_poppy": {},
     "minecraft:potted_red_mushroom": {},
@@ -2397,7 +2503,7 @@
     "minecraft:potted_wither_rose": {},
     "minecraft:powder_snow": {},
     "minecraft:powder_snow_cauldron": {
-        "level_cauldron": "1"
+        "level": "1"
     },
     "minecraft:powered_rail": {
         "powered": "false",
@@ -2631,6 +2737,35 @@
         "conditional": "false",
         "facing": "north"
     },
+    "minecraft:resin_block": {},
+    "minecraft:resin_brick_slab": {
+        "type": "bottom",
+        "waterlogged": "false"
+    },
+    "minecraft:resin_brick_stairs": {
+        "facing": "north",
+        "half": "bottom",
+        "shape": "straight",
+        "waterlogged": "false"
+    },
+    "minecraft:resin_brick_wall": {
+        "east": "none",
+        "north": "none",
+        "south": "none",
+        "up": "true",
+        "waterlogged": "false",
+        "west": "none"
+    },
+    "minecraft:resin_bricks": {},
+    "minecraft:resin_clump": {
+        "down": "false",
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "waterlogged": "false",
+        "west": "false"
+    },
     "minecraft:respawn_anchor": {
         "respawn_anchor_charges": "0"
     },
@@ -2692,6 +2827,7 @@
         "waterlogged": "true"
     },
     "minecraft:seagrass": {},
+    "minecraft:short_dry_grass": {},
     "minecraft:short_grass": {},
     "minecraft:shroomlight": {},
     "minecraft:shulker_box": {
@@ -2959,6 +3095,12 @@
     "minecraft:stripped_oak_wood": {
         "axis": "y"
     },
+    "minecraft:stripped_pale_oak_log": {
+        "axis": "y"
+    },
+    "minecraft:stripped_pale_oak_wood": {
+        "axis": "y"
+    },
     "minecraft:stripped_spruce_log": {
         "axis": "y"
     },
@@ -2988,8 +3130,9 @@
         "dusted": "0"
     },
     "minecraft:sweet_berry_bush": {
-        "age": "0"
+        "age_3": "0"
     },
+    "minecraft:tall_dry_grass": {},
     "minecraft:tall_grass": {
         "half": "lower"
     },
@@ -3000,6 +3143,10 @@
         "power": "0"
     },
     "minecraft:terracotta": {},
+    "minecraft:test_block": {
+        "test_block_mode": "start"
+    },
+    "minecraft:test_instance_block": {},
     "minecraft:tinted_glass": {},
     "minecraft:tnt": {
         "unstable": "false"
@@ -3007,11 +3154,11 @@
     "minecraft:torch": {},
     "minecraft:torchflower": {},
     "minecraft:torchflower_crop": {
-        "age": "0"
+        "age_1": "0"
     },
     "minecraft:trapped_chest": {
+        "chest_type": "single",
         "facing": "north",
-        "type": "single",
         "waterlogged": "false"
     },
     "minecraft:trial_spawner": {
@@ -3185,7 +3332,7 @@
         "level": "0"
     },
     "minecraft:water_cauldron": {
-        "level_cauldron": "1"
+        "level": "1"
     },
     "minecraft:waxed_chiseled_copper": {},
     "minecraft:waxed_copper_block": {},
@@ -3404,6 +3551,10 @@
         "facing": "north"
     },
     "minecraft:white_wool": {},
+    "minecraft:wildflowers": {
+        "facing": "north",
+        "flower_amount": "1"
+    },
     "minecraft:wither_rose": {},
     "minecraft:wither_skeleton_skull": {
         "powered": "false",
