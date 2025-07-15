@@ -3,6 +3,7 @@ package com.dfsek.terra.mod.config;
 import com.dfsek.tectonic.api.config.template.ConfigTemplate;
 import com.dfsek.tectonic.api.config.template.annotations.Default;
 import com.dfsek.tectonic.api.config.template.annotations.Value;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.BiomeAdditionsSound;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.sound.MusicSound;
@@ -36,6 +37,10 @@ public class VanillaBiomeProperties implements ConfigTemplate, Properties {
     @Value("colors.foliage")
     @Default
     private Integer foliageColor = null;
+
+    @Value("colors.dry-foliage")
+    @Default
+    private Integer dryFoliageColor = null;
 
     @Value("colors.sky")
     @Default
@@ -81,13 +86,18 @@ public class VanillaBiomeProperties implements ConfigTemplate, Properties {
     @Default
     private MusicSound music = null;
 
+    @Value("sound.music-volume")
+    @Default
+    private Float musicVolume = null;
+
     @Value("spawning")
     @Default
     private SpawnSettings spawnSettings = null;
 
     @Value("villager-type")
     @Default
-    private VillagerType villagerType = null;
+    private
+    RegistryKey<VillagerType> villagerType = null;
 
     public Integer getGrassColor() {
         return grassColor;
@@ -107,6 +117,10 @@ public class VanillaBiomeProperties implements ConfigTemplate, Properties {
 
     public Integer getFoliageColor() {
         return foliageColor;
+    }
+
+    public Integer getDryFoliageColor() {
+        return dryFoliageColor;
     }
 
     public Integer getSkyColor() {
@@ -153,11 +167,15 @@ public class VanillaBiomeProperties implements ConfigTemplate, Properties {
         return music;
     }
 
+    public Float getMusicVolume() {
+        return musicVolume;
+    }
+
     public SpawnSettings getSpawnSettings() {
         return spawnSettings;
     }
 
-    public VillagerType getVillagerType() {
+    public RegistryKey<VillagerType> getVillagerType() {
         return villagerType;
     }
 }

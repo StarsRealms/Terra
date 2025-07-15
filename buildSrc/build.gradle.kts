@@ -6,6 +6,12 @@ plugins {
 repositories {
     mavenCentral()
     gradlePluginPortal()
+    maven("https://maven.solo-studios.ca/releases") {
+        name = "Solo Studios"
+    }
+    maven("https://maven.solo-studios.ca/snapshots") {
+        name = "Solo Studios"
+    }
     maven("https://repo.codemc.org/repository/maven-public") {
         name = "CodeMC"
     }
@@ -16,10 +22,11 @@ repositories {
 
 dependencies {
     //TODO Allow pulling from Versions.kt
-    implementation("com.gradleup.shadow", "shadow-gradle-plugin", "8.3.1")
-    implementation("io.papermc.paperweight.userdev", "io.papermc.paperweight.userdev.gradle.plugin", "2.0.0-beta.16")
-    implementation("org.ow2.asm", "asm", "9.7")
-    implementation("org.ow2.asm", "asm-tree", "9.7")
+    implementation("com.gradleup.shadow", "shadow-gradle-plugin", "8.3.6")
+
+    implementation("io.papermc.paperweight.userdev", "io.papermc.paperweight.userdev.gradle.plugin", "2.0.0-beta.18")
+    implementation("org.ow2.asm", "asm", "9.8")
+    implementation("org.ow2.asm", "asm-tree", "9.8")
     implementation("com.dfsek.tectonic", "common", "4.2.1")
-    implementation("org.yaml", "snakeyaml", "2.3")
+    implementation("org.yaml", "snakeyaml", "2.4")
 }

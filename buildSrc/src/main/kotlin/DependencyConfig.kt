@@ -30,6 +30,12 @@ fun Project.configureDependencies() {
     repositories {
         mavenCentral()
         gradlePluginPortal()
+        maven("https://maven.solo-studios.ca/releases") {
+            name = "Solo Studios"
+        }
+        maven("https://maven.solo-studios.ca/snapshots") {
+            name = "Solo Studios"
+        }
         maven("https://maven.fabricmc.net/") {
             name = "FabricMC"
         }
@@ -60,11 +66,14 @@ fun Project.configureDependencies() {
         maven("https://storehouse.okaeri.eu/repository/maven-public/") {
             name = "Okaeri"
         }
+        maven("https://repo.onarandombox.com/multiverse-releases") {
+            name = "onarandombox"
+        }
     }
     
     dependencies {
-        testImplementation("org.junit.jupiter", "junit-jupiter-api", Versions.Libraries.Internal.junit)
-        testImplementation("org.junit.jupiter", "junit-jupiter-engine", Versions.Libraries.Internal.junit)
+        testImplementation("org.junit.jupiter", "junit-jupiter", Versions.Libraries.Internal.junit)
+        "testRuntimeOnly"("org.junit.platform", "junit-platform-launcher")
         compileOnly("org.jetbrains", "annotations", Versions.Libraries.Internal.jetBrainsAnnotations)
         
         compileOnly("com.google.guava", "guava", Versions.Libraries.Internal.guava)
