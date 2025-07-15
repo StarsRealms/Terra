@@ -52,5 +52,5 @@ fun Project.version(version: String): String {
     return if (!isPrerelease)
         version
     else //Only use git hash if it's a prerelease.
-        "$version-BETA+${getGitHash()}"
+        "$version-STARSREALMS+${getGitHash()}"
 }

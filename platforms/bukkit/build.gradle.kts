@@ -1,12 +1,4 @@
-plugins {
-    id("io.papermc.paperweight.userdev")
-    id("xyz.jpenilla.run-paper") version Versions.Bukkit.runPaper
-}
-
 dependencies {
-    // Required for :platforms:bukkit:runDevBundleServer task
-    paperweight.paperDevBundle(Versions.Bukkit.paperDevBundle)
-
     shaded(project(":platforms:bukkit:common"))
     shaded(project(":platforms:bukkit:nms:v1_21_7"))
     shaded("xyz.jpenilla", "reflection-remapper", Versions.Bukkit.reflectionRemapper)
@@ -25,18 +17,4 @@ tasks {
         exclude("com/google/j2objc/**")
         exclude("javax/**")
     }
-
-    runServer {
-        minecraftVersion(Versions.Bukkit.minecraft)
-        dependsOn(shadowJar)
-        pluginJars(shadowJar.get().archiveFile)
-
-        downloadPlugins {
-            modrinth("viaversion", "5.3.2")
-            modrinth("viabackwards", "5.3.2")
-        }
-    }
 }
-
-
-addonDir(project.file("./run/plugins/Terra/addons"), tasks.named("runServer").get())
