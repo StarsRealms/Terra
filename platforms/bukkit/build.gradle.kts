@@ -16,5 +16,11 @@ tasks {
         exclude("com/google/errorprone/**")
         exclude("com/google/j2objc/**")
         exclude("javax/**")
+
+        manifest {
+            attributes(
+                "paperweight-mappings-namespace" to "mojang"
+            )
+        }
     }
 }

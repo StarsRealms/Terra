@@ -1,7 +1,10 @@
+import io.papermc.paperweight.userdev.ReobfArtifactConfiguration
+
 plugins {
     id("io.papermc.paperweight.userdev")
 }
 
+paperweight.reobfArtifactConfiguration = ReobfArtifactConfiguration.MOJANG_PRODUCTION
 
 repositories {
     mavenLocal()
